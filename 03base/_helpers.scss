@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+
+ /// Clear inner floats
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/// Container styles
+.container {
+  max-width: 1180px; 
+  margin-left: auto; 
+  margin-right: auto;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  width: 100%; 
+ }
+
+/// hide-text
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+///visually-hidden
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
